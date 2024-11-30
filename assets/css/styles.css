@@ -416,58 +416,5 @@ footer {
     font-size: 16px;
 }
 
-/* Button Styles */
-.btn {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #333;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-    background-color: #555;
-    transform: translateY(-2px);
-}
-
-.google-btn {
-    background-color: #db4437;
-}
-
-.google-btn:hover {
-    background-color: #c23321;
-}
-
-.logout-btn {
-    background-color: #f44336;
-}
-
-.logout-btn:hover {
-    background-color: #d32f2f;
-}
-
-/* Input Fields Styling */
-form input {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-form input:focus {
-    border-color: #666;
-    outline: none;
-}
-
 
 
