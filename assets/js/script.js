@@ -340,3 +340,17 @@ function pageCall(page) {
 
     }
 }
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAGj2RotUNr_w9kQZXReUIDw8MRGnT1Cxk",
+  authDomain: "streamverse-c297c.firebaseapp.com",
+  projectId: "streamverse-c297c",
+  storageBucket: "streamverse-c297c.firebasestorage.app",
+  messagingSenderId: "394577342063",
+  appId: "1:394577342063:web:23d558a48b11f8b269679a",
+};
+
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+
