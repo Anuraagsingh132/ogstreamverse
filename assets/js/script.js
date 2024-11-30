@@ -353,4 +353,19 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
+// Email/Password Login
+document.getElementById("emailForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  auth.signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      alert("Login successful!");
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+});
+
 
