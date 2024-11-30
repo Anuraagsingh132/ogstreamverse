@@ -367,5 +367,42 @@ document.getElementById("emailForm").addEventListener("submit", (e) => {
       alert(error.message);
     });
 });
+// Google Login
+const googleProvider = new firebase.auth.GoogleAuthProvider();
+document.getElementById("googleLogin").addEventListener("click", () => {
+  auth.signInWithPopup(googleProvider)
+    .then((result) => {
+      alert("Google Sign-In successful!");
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+});
+// Anonymous Login
+document.getElementById("anonymousLogin").addEventListener("click", () => {
+  auth.signInAnonymously()
+    .then(() => {
+      alert("Logged in anonymously!");
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+});
+auth.onAuthStateChanged((user) => {
+  if (user) {
+    console.log("User logged in: ", user);
+    document.getElementById("auth-options").style.display = "none";
+    // Display user info or redirect
+  } else {
+    document.getElementById("auth-options").style.display = "block";
+  }
+});
+// Logout
+document.getElementById("logoutButton").addEventListener("click", () => {
+  auth.signOut().then(() => {
+    alert("Logged out successfully!");
+  });
+});
+
 
 
