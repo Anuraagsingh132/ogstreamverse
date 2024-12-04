@@ -138,7 +138,7 @@ function getMovies(url) {
       .catch(error => {
           console.error('There was a problem with the fetch operation:', error);
           // Redirect to a fallback URL if TMDB API fails
-          window.location.href = 'https://test.streamverse.biz'; // Replace with your fallback URL
+          window.location.href = 'https://og.streamverse.biz'; // Replace with your fallback URL
       });
 }
 
