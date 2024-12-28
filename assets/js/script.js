@@ -138,7 +138,7 @@ function getMovies(url) {
       .catch(error => {
           console.error('There was a problem with the fetch operation:', error);
           // Redirect to a fallback URL if TMDB API fails
-          window.location.href = 'https://test.streamverse.biz'; // Replace with your fallback URL
+          window.location.href = 'https://streamverse.biz'; // Replace with your fallback URL
       });
 }
 
@@ -194,7 +194,7 @@ function openNav(movie) {
 
             if (site === 'YouTube') {
               embed.push(`
-                <iframe src="https://vidsrc.xyz/embed/movie?tmdb=${id}" title="${name}" class="embed hide responsive-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://vidlink.pro/movie/${id}" class="embed hide responsive-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe src="https://moviesapi.club/movie/${id}" title="${name}" class="embed hide responsive-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
                 
