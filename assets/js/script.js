@@ -195,13 +195,11 @@ function openNav(movie) {
             if (site === 'YouTube') {
               embed.push(`
                 <iframe 
-                  src="https://vidlink.pro/movie/${id}?primaryColor=63b8bc&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=jw&title=true&poster=true&autoplay=true&nextbutton=false" 
+                  src="https://vidlink.pro/movie/${id}?primaryColor=63b8bc&secondaryColor=a2a2a2&iconColor=eefdec&icons=vid&player=default&title=true&poster=true&autoplay=true&nextbutton=false" 
                   class="embed hide responsive-iframe" 
                   frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen 
-                  style="pointer-events: none;"
-                ></iframe>               
+                  allowfullscreen ></iframe>               
                 <iframe src="https://moviesapi.club/movie/${id}" title="${name}" class="embed hide responsive-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
                 
