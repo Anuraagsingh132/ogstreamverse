@@ -211,9 +211,7 @@ function openNav(movie) {
                 <iframe src="https://multiembed.mov/?video_id=${id}&tmdb=1" title="${name}" class="embed hide responsive-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               `);
 
-              dots.push(`
-                <span class="dot">${idx + 1}</span>
-              `);
+              
             }
           });
 
