@@ -194,6 +194,8 @@ function openNav(movie) {
 
             if (site === 'YouTube') {
               embed.push(`
+                <iframe src="https://flicky.host/embed/movie/?id=${id}" title="${name}" class="embed hide responsive-iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 <iframe 
                   src="https://vidlink.pro/movie/${id}?primaryColor=63b8bc&secondaryColor=a2a2a2&iconColor=eefdec&icons=vid&player=default&title=true&poster=true&autoplay=true&nextbutton=false" 
                   class="embed hide responsive-iframe" 
