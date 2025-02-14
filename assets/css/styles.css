@@ -388,22 +388,7 @@ main{
     right: 5%;
 }
 
-.dots{
-    margin-top: 30px;
-}
-.dots .dot{
-    padding: 5px 15px;
-    border-radius: 50%;
-    border: 3px solid var(--secondary-color);
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 5px;
-}
 
-.dots .dot.active{
-    border-color: orange;
-}
 
 footer {
     margin-top: auto;
