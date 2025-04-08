@@ -1,7 +1,7 @@
 //TMDB API
 
 const API_KEY = 'api_key=1cf50e6248dc270629e802686245c2c8';
-const BASE_URL = 'https://api.themoviedb.org/3';
+const BASE_URL = 'https://tmdb-a62z.onrender.com/';
 
 const API_URL = BASE_URL + '/trending/movie/day?'+API_KEY;
 
