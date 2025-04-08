@@ -1,12 +1,21 @@
 //TMDB API
 
-const API_KEY = 'api_key=1cf50e6248dc270629e802686245c2c8';
+/*const API_KEY = 'api_key=1cf50e6248dc270629e802686245c2c8';
 const BASE_URL = 'https://tmdb-a62z.onrender.com';
 
 const API_URL = BASE_URL + '/trending/movie/day?'+API_KEY;
 
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
-const searchURL = BASE_URL + '/search/movie?'+API_KEY;
+const searchURL = BASE_URL + '/search/movie?'+API_KEY;*/
+
+const BASE_URL = 'https://tmdb-a62z.onrender.com/api'; // Note the `/api` prefix
+
+const API_URL = `${BASE_URL}/trending/movie/day`; // No need to include API key
+
+const IMG_URL = 'https://image.tmdb.org/t/p/w500'; // This stays the same
+
+const searchURL = `${BASE_URL}/search/movie`; // Again, no API key needed
+
 
 
 const genres = [
