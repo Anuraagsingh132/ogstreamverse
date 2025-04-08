@@ -324,7 +324,7 @@ form.addEventListener('submit',(e)=>{
     selectedGenre = [];
     highlightSelection();
     if(searchTerm){
-        getMovies(searchURL+'&query='+searchTerm)
+        getMovies(searchURL+'?query='+searchTerm)
     }else{
         getMovies(API_URL)
     }
