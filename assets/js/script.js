@@ -138,11 +138,11 @@ function getMovies(url) {
               main.innerHTML = '<h1 class="no-results">No Results Found!</h1>';
           }
       })
-      .catch(error => {
+      /*.catch(error => {
           console.error('There was a problem with the fetch operation:', error);
           // Redirect to a fallback URL if TMDB API fails
           window.location.href = 'https://streamverse.biz'; // Replace with your fallback URL
-      });
+      });*/
 }
 
 // search this : The Adventures of Chuck and Warren 
